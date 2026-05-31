@@ -1,3 +1,13 @@
+[![Electron](https://img.shields.io/badge/Electron-blue.svg?logo=electron&logoColor=white)](https://www.electron.org/)
+[![Linux](https://img.shields.io/badge/Linux-supported-green.svg?logo=linux&logoColor=white)](https://www.kernel.org/)
+[![Arch Linux](https://img.shields.io/badge/Arch-Linux-blue?logo=arch-linux&logoColor=white)](https://archlinux.org/)
+[![Debian](https://img.shields.io/badge/Debian-supported-a80030.svg?logo=debian&logoColor=white)](https://www.debian.org/)
+[![Fedora](https://img.shields.io/badge/Fedora-supported-294172.svg?logo=fedora&logoColor=white)](https://getfedora.org/)
+[![Gentoo](https://img.shields.io/badge/Gentoo-supported-54487a.svg?logo=gentoo&logoColor=white)](https://www.gentoo.org/)
+[![openSUSE](https://img.shields.io/badge/openSUSE-supported-73ba25.svg?logo=opensuse&logoColor=white)](https://www.opensuse.org/)
+
+---
+
 # Lyrics Player GUI
 
 A desktop lyrics overlay for [Pear Music Desktop](https://github.com/pear-devs/pear-desktop). It connects to Pear’s local API, shows synced lyrics in time with playback, and falls back to [LRCLIB](https://lrclib.net) when Pear does not provide lyrics.
