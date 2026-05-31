@@ -36,6 +36,7 @@ Add your captures under `docs/screenshots/` and replace the placeholders below.
 ```bash
 git clone https://github.com/YOUR_USERNAME/Lirycs-Player-GUI.git
 cd "Lirycs Player GUI"
+cd src
 npm install
 ```
 
@@ -73,6 +74,7 @@ Output is written to `dist/` as a packaged Windows (`win32` x64) app named **Pea
 ## Project structure
 
 ```
+src/
 ├── main.js       # Electron main process
 ├── index.html    # UI shell
 ├── app.js        # Pear API, lyrics sync, LRCLIB fallback
