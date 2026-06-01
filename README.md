@@ -23,8 +23,6 @@ Add your captures under `docs/screenshots/` and replace the placeholders below.
 | ![Lyrics overlay — replace with docs/screenshots/main.png](docs/screenshots/main.png) | ![Settings panel — replace with docs/screenshots/controls.png](docs/screenshots/controls.png) |
 | Synced lyrics over blurred cover art | API host, port, sync lead, background, debug |
 
-> **Placeholder:** `docs/screenshots/main.png` and `docs/screenshots/controls.png` are not in the repo yet. Drop your images there (or update the paths) so they render on GitHub.
-
 ## Features
 
 - **Pear API integration** — WebSocket (`/api/v1/ws`) plus HTTP polling (`/api/v1/song`) for track metadata and playback position
