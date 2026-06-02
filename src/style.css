@@ -187,14 +187,6 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-/* Build-up mode: not-yet-revealed words are invisible placeholders */
-.lyric-word--hidden {
-    opacity: 0;
-    animation: none !important;
-    /* keep the word in layout so line doesn't shift width */
-    visibility: hidden;
-}
-
 .animation-pulse {
     animation: pulseGlow 2s infinite ease-in-out;
 }

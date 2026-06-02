@@ -743,7 +743,9 @@ function startWordByWord(textString, availableMs, lineIndex) {
     // Each word gets an equal time slot across the line duration
     // Clamp slot between 80ms (very fast) and 600ms (slow/relaxed)
     const rawSlotMs = availableMs / wordCount;
-    const slotMs = Math.max(80, Math.min(600, rawSlotMs));
+    // Build-up mode runs a bit faster (max 400ms per word vs 600ms for word-by-word)
+    const maxSlotMs = lyricMode === 'build-up' ? 400 : 600;
+    const slotMs = Math.max(80, Math.min(maxSlotMs, rawSlotMs));
 
     if (lyricMode === 'build-up') {
         words.forEach((word, index) => {
@@ -787,26 +789,23 @@ function showBuildUp(words, revealedUpTo) {
     const lineWrapper = document.createElement('div');
     lineWrapper.className = 'lyric-line lyric-line--live';
 
-    words.forEach((word, index) => {
+    // Only render words up to revealedUpTo — no hidden placeholders.
+    // justify-content: center on .lyric-line keeps the growing text centered.
+    for (let index = 0; index <= revealedUpTo; index++) {
         const span = document.createElement('span');
-        span.textContent = word;
+        span.textContent = words[index];
+        span.style.animationDelay = '0s, 0s';
 
         if (index < revealedUpTo) {
-            // Already-revealed words: visible but dimmed
+            // Already-revealed words: visible but dimmed, no animation
             span.className = 'lyric-word lyric-word--revealed';
-            span.style.animationDelay = '0s, 0s';
-        } else if (index === revealedUpTo) {
-            // The newest word: burst animation
-            span.className = 'lyric-word';
-            span.style.animationDelay = '0s, 0s';
         } else {
-            // Not-yet-revealed words: invisible placeholder to hold layout
-            span.className = 'lyric-word lyric-word--hidden';
-            span.style.animationDelay = '0s, 0s';
+            // The newest word: full burst animation
+            span.className = 'lyric-word';
         }
 
         lineWrapper.appendChild(span);
-    });
+    }
 
     lyricsTarget.appendChild(lineWrapper);
 }
