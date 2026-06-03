@@ -16,8 +16,6 @@ Built with **Electron** — a frameless-friendly window with a blurred album-art
 
 ## Screenshots
 
-Add your captures under `docs/screenshots/` and replace the placeholders below.
-
 | Main view | Controls |
 | --- | --- |
 | ![Lyrics overlay — replace with docs/screenshots/main.png](docs/screenshots/main.png) | ![Settings panel — replace with docs/screenshots/controls.png](docs/screenshots/controls.png) |
