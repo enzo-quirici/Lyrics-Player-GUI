@@ -49,15 +49,16 @@ npm install
 ## Usage
 
 1. Start Pear Music Desktop and begin playback.
-2. Run the overlay:
+2. Start the API Server on the app and set no verification (the app is not able to ask permition).
+3. Run the overlay:
 
    ```bash
    npm start
    ```
 
-3. In the controls panel (top right), set **API Host** (usually `127.0.0.1`) and **API Port** (default `26538`).
-4. Adjust **Lead (s)** if lyrics feel early or late relative to the audio.
-5. Press **Space** to toggle the controls panel for a clean fullscreen lyrics view.
+4. In the controls panel (top right), set **API Host** (usually `127.0.0.1`) and **API Port** (default `26538`).
+5. Adjust **Lead (s)** if lyrics feel early or late relative to the audio.
+6. Press **Space** to toggle the controls panel for a clean fullscreen lyrics view.
 
 ## Configuration
 
