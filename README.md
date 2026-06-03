@@ -37,7 +37,7 @@ Built with **Electron** — a frameless-friendly window with a blurred album-art
 ## Requirements
 
 - [Node.js](https://nodejs.org/) (LTS recommended)
-- Pear Music Desktop running with its API enabled (default port **26538**)
+- Pear Music Desktop running with its API Server enabled (default port **26538**)
 
 ## Installation
 
