@@ -10,7 +10,7 @@
 
 # Lyrics Player GUI
 
-A desktop lyrics overlay for [Pear Music Desktop](https://github.com/pear-devs/pear-desktop). It connects to Pear’s local API, shows synced lyrics in time with playback, and falls back to [LRCLIB](https://lrclib.net) when Pear does not provide lyrics.
+A desktop lyrics overlay for [Pear Music Desktop](https://github.com/pear-devs/pear-desktop). ~~It connects to Pear’s local API~~, shows synced lyrics in time with playback, and ~~falls back~~ fetch the lyrics form [LRCLIB](https://lrclib.net) ~~when Pear does not provide lyrics~~ Yeah this just never worked.
 
 Built with **Electron** — a frameless-friendly window with a blurred album-art background and word-by-word line animations.
 
